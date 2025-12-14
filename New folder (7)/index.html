@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>North Sussex Judo Club</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+/* NAV */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.85);
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 18px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #ff6b3b;
+}
+
+/* SECTIONS */
+section {
+    display: none;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px 40px;
+}
+
+section.active {
+    display: block;
+}
+
+/* CONTENT */
+.content {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+/* TITLES */
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #ff6b3b;
+    margin-bottom: 20px;
+}
+
+h1 { font-size: 48px; }
+h2 { font-size: 32px; }
+
+/* TEXT */
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 0 auto 15px;
+}
+
+/* BENEFITS */
+.benefits {
+    list-style: none;
+    margin-top: 20px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.benefits li {
+    margin: 6px 0;
+}
+
+/* COACHES */
+.coach-box {
+    background: rgba(0,0,0,0.65);
+    border-radius: 12px;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.coach-box img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.coach-box h3 {
+    color: #ff6b3b;
+}
+
+/* REGISTER */
+form {
+    background: rgba(0,0,0,0.65);
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 420px;
+    margin: auto;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+}
+
+button {
+    background: #ff6b3b;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 15px;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a onclick="show('home')">Home</a>
+    <a onclick="show('classes')">Classes</a>
+    <a onclick="show('coaches')">Coaches</a>
+    <a onclick="show('nutrition')">Nutrition</a>
+    <a onclick="show('register')">Register</a>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="active" style="background-image:url('images/lolp.jpeg')">
+<div class="content">
+<h1>North Sussex Judo Club</h1>
+<p>
+Sport is more than physical strength — it is a way of life that builds discipline,
+shapes character, and strengthens both body and mind. At North Sussex Judo Club,
+we believe that true success comes from balance, dedication, and respect.
+</p>
+
+<p>
+As one of the most established judo clubs in the region, our club has a long history
+of developing confident athletes through professional training, strong values,
+and a supportive environment. Every session is designed to challenge limits,
+build resilience, and inspire continuous personal growth.
+</p>
+
+<p>
+Joining North Sussex Judo Club means becoming part of a legacy where commitment,
+self-improvement, and teamwork come together to create champions — not only on the mat,
+but in everyday life.
+</p>
+<ul class="benefits">
+<li>🏋️ Physical strength & flexibility</li>
+<li>🧠 Mental focus & discipline</li>
+<li>🤝 Respect & teamwork</li>
+<li>💪 Confidence building</li>
+</ul>
+</div>
+</section>
+
+<!-- CLASSES -->
+<section id="classes" style="background-image:url('images/popow.jpeg')">
+<div class="content">
+<h2>Training Classes</h2>
+<p>Beginner • Intermediate • Elite</p>
+<p>Youth Programs • Competition Preparation</p>
+</div>
+</section>
+
+<!-- COACHES -->
+<section id="coaches" style="background-image:url('images/huhp.jpeg')">
+<div class="content">
+<h2>Our Coaches</h2>
+
+<div class="coach-box">
+<img src="c:\Users\Hp\Desktop\dod.jab.jpg">
+<div>
+<h3>Coach Adam Smith</h3>
+<p>Elite performance specialist</p>
+</div>
+</div>
+
+<div class="coach-box">
+<img src="c:\Users\Hp\Desktop\o.jpg">
+<div>
+<h3>Coach Daniel Brown</h3>
+<p>Youth & advanced athletes</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- NUTRITION -->
+<section id="nutrition" style="background-image:url('images/sosoy.jpeg')">
+<div class="content">
+<h2>Nutrition Programs</h2>
+
+<p><strong>Program 1 (50–60 kg) – £40</strong><br>
+Designed for lightweight athletes to maintain balance, flexibility, and recovery.</p>
+
+<p><strong>Program 2 (60–70 kg) – £55</strong><br>
+Supports strength building, endurance, and training performance.</p>
+
+<p><strong>Program 3 (70–80 kg) – £70</strong><br>
+Focused on muscle recovery, power, and high-intensity training.</p>
+
+<p><strong>Program 4 (80–100 kg) – £90</strong><br>
+Advanced plan for strength, joint health, and controlled weight management.</p>
+</div>
+</section>
+
+<!-- REGISTER -->
+<section id="register" style="background-image:url('images/jpeg.jpeg')">
+<div class="content">
+<h2>Register & Calculate Cost</h2>
+
+<form onsubmit="event.preventDefault(); calculate();">
+
+<input type="text" id="name" placeholder="Full Name" required>
+<input type="number" id="weight" placeholder="Weight (kg)" required>
+
+<select id="program">
+<option value="25">Beginner – £25</option>
+<option value="30">Intermediate – £30</option>
+<option value="35">Elite – £35</option>
+</select>
+<select id="nutrition">
+    <option value="0">No Nutrition Program</option>
+    <option value="40">Program 1 (50–60 kg) – £40</option>
+    <option value="55">Program 2 (60–70 kg) – £55</option>
+    <option value="70">Program 3 (70–80 kg) – £70</option>
+    <option value="90">Program 4 (80–100 kg) – £90</option>
+</select>
+
+<input type="number" id="hours" placeholder="Private Training Hours" value="0">
+
+<label>
+<input type="checkbox" id="competition"> Competition Entry (£22)
+</label>
+
+<button type="submit">Calculate</button>
+
+<div class="result" id="result"></div>
+
+</form>
+</div>
+</section>
+
+<script>
+function show(id){
+    document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+}
+
+function calculate(){
+    let name = document.getElementById("name").value;
+    let weight = parseFloat(document.getElementById("weight").value);
+    let program = parseFloat(document.getElementById("program").value);
+    let hours = parseInt(document.getElementById("hours").value);
+    let competition = document.getElementById("competition").checked;
+
+    let category = "";
+    if(weight > 100) category = "Heavyweight";
+    else if(weight > 90) category = "Light-Heavyweight";
+    else if(weight > 81) category = "Middleweight";
+    else if(weight > 73) category = "Light-Middleweight";
+    else if(weight > 66) category = "Lightweight";
+    else category = "Flyweight";
+
+    let total = program + (hours * 9.5);
+    if(competition) total += 22;
+
+    document.getElementById("result").innerHTML =
+        "👤 " + name + "<br>" +
+        "⚖️ Weight Category: " + category + "<br>" +
+        "💰 Total Monthly Cost: £" + total.toFixed(2);
+}
+</script>
+
+</body>
+</html>
